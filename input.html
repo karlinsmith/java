@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+<body>
+<style>
+		body{
+			background-color:darkred}
+			
+	
+</style>
+
+<h3>What Is your favorite Sport?</h3>
+	
+	
+<button type="button" onclick="document.getElementById(&quot;demo&quot;).innerHTML = &quot;Football is your favorite sport!&quot;">Football</button>		
+<button type="button" onclick="document.getElementById(&quot;demo&quot;).innerHTML = &quot;Basketball is your favorite sport!&quot;">Basketball</button>
+<button type="button" onclick="document.getElementById(&quot;demo&quot;).innerHTML = &quot;Soccer is your favorite sport!&quot;">Soccer</button>
+
+<p id="demo"></p>
+
+<h3>Type in another sport that you like</h3>
+	
+<input type="text" id="myText" value="New Sport...">
+
+<button onclick="myFunction()">Enter</button>
+
+<p id="demo1"></p>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myText").value;
+  document.getElementById("demo1").innerHTML = x;
+}
+</script>
+
+</body>
+</html>
+
